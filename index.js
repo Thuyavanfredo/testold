@@ -88,13 +88,13 @@ app.on('activate', () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
 autoUpdater.on("update-available",()=>{
-log.info("Update available")
+  log.info("Update available")
 })
 autoUpdater.on("checking-for-update",()=>{
   log.info("checking-for-update")
 })
   autoUpdater.on("download-progress",(progressTrack)=>{
-    log.info("\n\ndownload-progress")
+  log.info("\n\ndownload-progress")
   log.info(progressTrack)
 })
 autoUpdater.on("update-downloaded",()=>{

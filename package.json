@@ -1,0 +1,40 @@
+{
+  "name": "automation-toolbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder -p always",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "productName": "Automation ToolBox",
+    "win": {
+      "target": "NSIS",
+      "icon": "icon/android-chrome-512x512.png"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "Thuyavanfredo",
+        "repo": "testold"
+      }
+    ],
+    "extraResources": [
+      "./Effectivity Macro 2.06.exe"
+    ]
+  },
+  "author": "Thuyavan",
+  "license": "ISC",
+  "dependencies": {
+    "electron-log": "^4.4.8",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^5.3.0",
+    "jquery": "^3.6.1"
+  },
+  "devDependencies": {
+    "electron": "^6.1.12",
+    "electron-builder": "^23.6.0"
+  }
+}
