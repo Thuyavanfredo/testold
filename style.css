@@ -1,0 +1,217 @@
+@font-face {
+    font-family: manrope;
+    src: url(./fonts/Manrope-Bold.ttf);
+    }
+body{
+      background-image: url(./img/background.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+  
+  }
+.resizable{
+  font-size: 14PX;
+  font-family: manrope;
+}
+.jexcel_container{
+  margin-top: -20px;
+}
+.bts{
+  padding: 0 0 15px 20px;
+  width: 100%;
+}
+.image{
+  transition: 800ms;
+  position: absolute;
+  top: 0px;
+}
+.image img{
+  width: 36px;
+  height: 36px;
+  /* padding:5px; */
+  margin: 20px 0 0 12px;
+  background-size: contain;
+  border: 3px solid #ca9800;
+  border-radius :20px;
+  background-color: #ffffff;
+}
+
+.image:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  transition: 800ms;
+}
+.bt{
+    width: 200px;
+    height: 49px;
+    margin: 10px 0 0 50PX;
+    font-family: manrope;
+    /* background: #407efb; */
+    font-size: 18PX;
+    color: #676767;
+    background-image: url(./img/m_button.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    transition: 500ms;
+
+}
+.bt:hover{
+    color:black;
+    box-shadow: 0px 5px 10px 0 rgb(214, 223, 221);
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 500ms;
+}
+.bt:active{
+    color:black;
+    transform: scale(0.9);
+    transition: 500ms;
+    cursor: pointer;
+}
+.save{
+  display: inline-block;
+  color: white;
+  font-family: manrope;
+  font-size: 20px;
+  margin: 0px 50px 0 70px;
+}
+.note{
+  display: inline-block;
+  color: white;
+  font-family: manrope;
+  font-size: 18px;
+  border: 3px solid#FFFF00;
+  border-radius: 8px;
+  width: 1080px;
+  height: 28px;
+  padding-left: 15px;
+}
+.jexcel > thead > tr > td{
+  z-index: 1 !important
+}
+.modal{
+  font-family: manrope;
+  background-image: url(./img/modal.png);
+  border: 50px;
+  border: 2px solid whitesmoke;
+  color: white;
+  font-size: 18px;
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 1px 30px 0px 30px;
+}
+.modal button{
+  width: 60px;
+  height: 35px;
+  margin-top: -8px;
+  margin-left: 90px;
+  border-radius: 8px;
+  border: 2px solid #ca9800;
+  background:none;
+  font-size: 18px;
+}
+.modal a{
+  font-family: manrope;
+  color: white;
+  font-size: 14px;
+}
+.modal button:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 2px 5px 0  #888888;
+  cursor: pointer;
+  transition: 500ms;
+}
+.modal button:active{
+  background-color: white;
+  color:black;
+  scale: (1.03);
+  transform: scale(.95);
+  cursor: pointer;
+  transition: 500ms;
+}
+.modalopen{
+  display:none;
+}
+@media screen and (max-width: 1500px) {
+  .jexcel_container{
+    margin-top: -20px;
+  }
+  .bts{
+    padding: 0 0 15px 20px;
+    width: 100%;
+  }
+  .image{
+    transition: 800ms;
+    position: absolute;
+    top: 0px;
+  }
+  .image img{
+    width: 36px;
+    height: 36px;
+    /* padding:5px; */
+    margin: 20px 0 0 -2px;
+    background-size: contain;
+    border: 3px solid #ca9800;
+    border-radius :20px;
+    background-color: #ffffff;
+  }
+  
+  .image:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: 800ms;
+  }
+  .bt{
+      width: 200px;
+      height: 49px;
+      margin: 10px 0 0 38PX;
+      font-family: manrope;
+      /* background: #407efb; */
+      font-size: 18PX;
+      color: #676767;
+      background-image: url(./img/m_button.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: none;
+      outline: none;
+      transition: 500ms;
+  
+  }
+  .bt:hover{
+      color:black;
+      box-shadow: 0px 5px 10px 0 rgb(214, 223, 221);
+      cursor: pointer;
+      transform: scale(1.02);
+      transition: 500ms;
+  }
+  .bt:active{
+      color:black;
+      transform: scale(0.9);
+      transition: 500ms;
+      cursor: pointer;
+  }
+  .save{
+    display: inline-block;
+    color: white;
+    font-family: manrope;
+    font-size: 20px;
+    margin: -15px 50px 5px -4px;
+  }
+  .note{
+    display: inline-block;
+    color: white;
+    font-family: manrope;
+    font-size: 18px;
+    border: 3px solid#FFFF00;
+    border-radius: 8px;
+    width: 1080px;
+    height: 28px;
+    padding-left: 15px;
+  }
+  .jexcel > thead > tr > td{
+    z-index: 1 !important
+  }
+}
+

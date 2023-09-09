@@ -1,0 +1,1923 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: manrope;
+  src: url(./fonts/Manrope-Bold.ttf);
+}
+body {
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gno input::placeholder {
+  padding-left: 10px;
+}
+.desktoponly {
+  display: none;
+}
+.modal {
+  font-family: manrope;
+  background-image: url(./img/modal.png);
+  border: 50px;
+  border: 2px solid whitesmoke;
+  color: white;
+  font-size: 18px;
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+}
+.modal button {
+  width: 60px;
+  height: 35px;
+  margin-top: 15px;
+  margin-left: 90px;
+  border-radius: 8px;
+  border: 2px solid #ca9800;
+  background: none;
+  font-size: 18px;
+}
+.modal a {
+  font-family: manrope;
+  color: white;
+  font-size: 14px;
+}
+.modal button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 5px 0 #888888;
+  cursor: pointer;
+  transition: 500ms;
+}
+.modal button:active {
+  background-color: white;
+  color: black;
+  scale: (1.03);
+  transform: scale(0.95);
+  cursor: pointer;
+  transition: 500ms;
+}
+.modal p {
+  margin-top: 8px 0;
+}
+.modalopen {
+  display: none;
+}
+.container {
+  /* font-family: manrope;
+  margin-top: 5%;
+  margin-left: 300px;
+  background-image: url(img/bg.jpg);
+  background-size:contain;
+  width: 900px;
+  height: 600px;
+  color:#FFFFFF;
+  padding: 20px 0px 20px 20px;
+  border-radius: 15px 15px 15px 15px; */
+  display: flex;
+  flex: 1;
+  margin: 5vh 20vw;
+  background-image: url(./img/background.png);
+  background-size: cover;
+  border-radius: 2vh;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.but {
+  padding: 16vh 0 0 3vw;
+}
+.bt {
+  margin: 2.8vh 0 2.8vw 0;
+  height: 49px;
+  width: 200px;
+  font-family: manrope;
+  font-size: 1.25rem;
+  color: #676767;
+  background-image: url(./img/m_button.jpg);
+  background-size: cover;
+  border: none;
+  transition: 500ms;
+}
+.bt:hover {
+  color: black;
+  box-shadow: 0px 5px 10px 0 rgb(214, 223, 221);
+  transform: scale(1.03);
+  /* transition: 500ms; */
+  cursor: pointer;
+}
+.bt:active {
+  color: black;
+  box-shadow: 0px 5px 10px 0 rgb(214, 223, 221);
+  transform: scale(0.9);
+  /* transition: 500ms; */
+  cursor: pointer;
+}
+.form {
+  width: 100%;
+}
+.info {
+  padding: 8px 0 0 0;
+  font-family: manrope;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 20px 10px 0 50px;
+}
+.info .names {
+  padding: -12px 0px 0px 0;
+  margin-left: 250px;
+  font-family: manrope;
+  font-size: 16px;
+}
+.info .names1 {
+  padding: 5px 0px 5px 0;
+  font-family: manrope;
+  margin-left: 50px;
+}
+.thanks {
+  margin-left: 150px;
+  font-family: manrope;
+  font-size: 18px;
+}
+.contact {
+  font-size: 18px;
+  font-family: manrope;
+  color: #ffffff;
+  /* margin-left: 25px; */
+  margin-top: 25px;
+}
+.con {
+  font-size: 20px;
+  font-family: manrope;
+  color: #e4b62f;
+}
+.main {
+  height: 75%;
+}
+.home {
+  border: 1px solid #ffffff;
+  margin: 17.5vh 4.5vh 4.5vh 4.5vh;
+  width: 100%;
+  height: 75%;
+  border-radius: 12px;
+  border-color: white;
+  background-image: url(./img/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gno {
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  margin: 80px 0 0 40px;
+}
+.gno input {
+  font-family: manrope;
+  font-size: 14px;
+  color: white;
+  margin-left: 124px;
+  width: 400px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.gtype {
+  display: flex;
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  margin: 150px 0 0 40px;
+}
+.graptype {
+  margin-left: 140px;
+  width: 50%;
+  margin: auto 0;
+}
+.xreftype {
+  width: 50%;
+  margin: auto 0;
+}
+.xrtype {
+  display: flex;
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  margin: 120px 0 0 40px;
+}
+.IEno {
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  margin: 20px 0 0 40px;
+}
+.IDno {
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  margin: 120px 0 0 40px;
+}
+.IEno input {
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  margin: 0 0 0 178px;
+  width: 400px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.IEno input::placeholder {
+  padding-left: 10px;
+}
+.IDno input {
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  margin: 40px 20px;
+  margin: 0 0 0 178px;
+  width: 400px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.IDno input::placeholder {
+  padding-left: 10px;
+}
+.tol1 {
+  display: flex;
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  margin: 30px 0 30px 40px;
+}
+.tol1 input {
+  width: 170px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  margin-left: 180px;
+  width: 150px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol1 .input1 {
+  margin-left: 0px;
+  margin-right: 3px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  width: 155px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol1 input::placeholder {
+  padding-left: 5px;
+}
+.tol2 input::placeholder {
+  padding-left: 5px;
+}
+.tol3 input::placeholder {
+  padding-left: 5px;
+}
+.tol4 input::placeholder {
+  padding-left: 5px;
+}
+.tol5 input::placeholder {
+  padding-left: 5px;
+}
+.tol6 input::placeholder {
+  padding-left: 5px;
+}
+.met input::placeholder {
+  padding-left: 5px;
+}
+.tol1 img {
+  display: inline-block;
+  margin: auto 10px;
+  width: 12px;
+  height: 15px;
+}
+.tol2 {
+  display: flex;
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  margin: 30px 0 30px 40px;
+}
+.tol2 input {
+  width: 170px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  margin-left: 127px;
+  width: 150px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol2 .input1 {
+  margin-left: 0px;
+  margin-right: 3px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  width: 155px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol2 img {
+  display: inline-block;
+  margin: auto 10px;
+  width: 12px;
+  height: 15px;
+}
+.tol3 {
+  display: flex;
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  margin: 30px 0 30px 40px;
+}
+.tol3 input {
+  width: 170px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  margin-left: 135px;
+  width: 150px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol3 .input1 {
+  margin-left: 0px;
+  margin-right: 3px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  width: 155px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol3 img {
+  display: inline-block;
+  margin: auto 10px;
+  width: 12px;
+  height: 15px;
+}
+.tol4 {
+  display: flex;
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  margin: 30px 0 30px 40px;
+}
+.tol4 input {
+  width: 170px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  margin-left: 205px;
+  width: 150px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol4 .input1 {
+  margin-left: 0px;
+  margin-right: 3px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  width: 155px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol4 img {
+  display: inline-block;
+  margin: auto 10px;
+  width: 12px;
+  height: 15px;
+}
+.tol5 {
+  display: flex;
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  margin: 30px 0 30px 40px;
+}
+.tol5 input {
+  width: 170px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  margin-left: 166px;
+  width: 150px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol5 .input1 {
+  margin-left: 0px;
+  margin-right: 3px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  width: 155px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol5 img {
+  display: inline-block;
+  margin: auto 10px;
+  width: 12px;
+  height: 15px;
+}
+.tol6 {
+  display: flex;
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  margin: 30px 0 30px 40px;
+}
+.tol6 input {
+  width: 170px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  margin-left: 132px;
+  width: 150px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol6 .input1 {
+  margin-left: 0px;
+  margin-right: 3px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  width: 155px;
+  height: 30px;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.tol6 img {
+  display: inline-block;
+  margin: auto 10px;
+  width: 12px;
+  height: 15px;
+}
+.met label {
+  width: 240px;
+  display: inline-block;
+}
+.met {
+  font-family: manrope;
+  font-size: 18px;
+  color: white;
+  margin: 30px 0 30px 40px;
+}
+.met input {
+  margin-left: 1px;
+  width: 335px;
+  height: 30px;
+  font-family: manrope;
+  font-size: 12px;
+  color: white;
+  border: 3px solid#ca9800;
+  border-radius: 5px;
+  background: transparent;
+}
+.upright {
+  margin: -380px 0 0 725px;
+  font-size: 26px;
+  font-family: manrope;
+  writing-mode: vertical-rl;
+  /* text-orientation: upright; */
+  color: #999999;
+}
+/* .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+} */
+
+.radio {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: -60px;
+  font-size: 12px;
+  border: 3px solid #ca9800;
+  border-radius: 5px;
+  background: transparent;
+  border-radius: 5px;
+  height: 120px;
+}
+.radio1 {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: -60px;
+  font-size: 12px;
+  border: 3px solid #ca9800;
+  border-radius: 5px;
+  background: transparent;
+  border-radius: 5px;
+  height: 100px;
+}
+.list1 {
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list1 .label {
+  margin: 10px 0 0 5px;
+}
+.list2 {
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list2 .label {
+  margin: 0 0 0 5px;
+}
+.bt1 {
+  position: absolute;
+  /* margin: 0px 0px 100px 120px; */
+  /* padding: 28% 0 0 20%; */
+  bottom: 200px;
+  left: 940px;
+}
+.bt1 button {
+  margin: 0 20px;
+  width: 125px;
+  height: 45px;
+  font-family: manrope;
+  color: #ffff;
+  font-size: 16px;
+  border: 3px solid #ca9800;
+  border-radius: 5px;
+  background: transparent;
+  transition: 500ms;
+}
+.bt1 button:hover {
+  /* background-color: #FFFF; */
+  /* color: black; */
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px 0 #888888;
+  /* transition: 800ms; */
+  cursor: pointer;
+}
+.bt1 button:active {
+  background-color: #ffff;
+  color: black;
+  scale: (1.03);
+  transform: scale(0.95);
+  /* transition: 800ms; */
+  cursor: pointer;
+}
+.bt2 {
+  position: absolute;
+  /* margin: 0px 0px 100px 120px; */
+  /* padding: 28% 0 0 20%; */
+  bottom: 200px;
+  left: 685px;
+}
+.bt2 button {
+  margin: 0 20px;
+  width: 125px;
+  height: 45px;
+  font-family: manrope;
+  color: #ffff;
+  font-size: 16px;
+  border: 3px solid #ca9800;
+  border-radius: 5px;
+  background: transparent;
+  transition: 500ms;
+}
+.bt2 button:hover {
+  /* background-color: #FFFF; */
+  /* color: black; */
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px 0 #888888;
+  /* transition: 800ms; */
+  cursor: pointer;
+}
+.bt2 button:active {
+  background-color: #ffff;
+  color: black;
+  scale: (1.03);
+  transform: scale(0.95);
+  /* transition: 800ms; */
+  cursor: pointer;
+}
+.icon {
+  display: flex;
+  position: absolute;
+  top: 90px;
+  left: 420px;
+  scale: 120%;
+}
+.image img {
+  width: 36px;
+  padding: 5px;
+  margin: 10px 0 0 12px;
+  border: 3px solid #ca9800;
+  border-radius: 18px;
+  background-color: #ffffff;
+}
+.image {
+  transition: 800ms;
+}
+.image:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  transition: 800ms;
+}
+.toggle {
+  display: inline-block;
+}
+.toggle input {
+  width: 30px;
+  height: 30px;
+  margin: auto 30px;
+}
+input[type="checkbox"] {
+  position: relative;
+  top: 5px;
+  width: 45px;
+  height: 22px;
+  -webkit-appearance: none;
+  background: #b9bab4;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0.2);
+  transition: 0.5s;
+}
+input:checked[type="checkbox"] {
+  background: #e5b82f;
+}
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  top: -1px;
+  left: 0;
+  background: white;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0.2);
+  transition: 0.5s;
+}
+input:checked[type="checkbox"]:before {
+  left: 25px;
+}
+.note h3{
+  display:none;
+  margin: -320px 0 0 280px;
+  font-size: 14px;
+  font-family: manrope;
+  color: white;
+}
+@media screen and (max-width: 1700px) {
+  .note h3{
+    display:none;
+    margin: -294px 0 0 179px;
+    font-size: 12px;
+    font-family: manrope;
+    color: white;
+  }
+  .gno input::placeholder {
+    padding-left: 10px;
+  }
+  .IEno input::placeholder {
+    padding-left: 10px;
+  }
+  .IDno input::placeholder {
+    padding-left: 10px;
+  }
+  .tol1 input::placeholder {
+    padding-left: 10px;
+  }
+  .tol2 input::placeholder {
+    padding-left: 10px;
+  }
+  .tol3 input::placeholder {
+    padding-left: 10px;
+  }
+  .met input::placeholder {
+    padding-left: 10px;
+  }
+  .modal {
+    font-family: manrope;
+    background-image: url(./img/modal.png);
+    border: 50px;
+    border: 2px solid whitesmoke;
+    color: white;
+    font-size: 18px;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  .modal button {
+    width: 60px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 90px;
+    border-radius: 8px;
+    border: 2px solid #ca9800;
+    background: none;
+    font-size: 18px;
+  }
+  .modal a {
+    font-family: manrope;
+    color: white;
+  }
+  .modal button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 5px 0 #888888;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  .modal button:active {
+    background-color: white;
+    color: black;
+    scale: (1.03);
+    transform: scale(0.95);
+    cursor: pointer;
+    transition: 500ms;
+  }
+  .modal p {
+    margin-top: 8px 0;
+  }
+  .modalopen {
+    display: none;
+  }
+  .icon {
+    top: 60px;
+    left: 320px;
+    scale: 100%;
+  }
+  .but {
+    padding: 14.2vh 0 0 2vw;
+  }
+  .bt {
+    margin: 1.2vh 0 3.2vw 0;
+    /* height: 49px;
+      width: 200px; */
+    scale: 95%;
+    font-family: manrope;
+    font-size: 1.25rem;
+    color: #676767;
+    background-image: url(./img/m_button.jpg);
+    background-size: cover;
+    border: none;
+    transition: 500ms;
+  }
+  .bt:hover {
+    color: black;
+    box-shadow: 0px 5px 10px 0 rgb(214, 223, 221);
+    transform: scale(1.03);
+    /* transition: 500ms; */
+    cursor: pointer;
+  }
+  .bt:active {
+    color: black;
+    box-shadow: 0px 5px 10px 0 rgb(214, 223, 221);
+    transform: scale(0.9);
+    /* transition: 500ms; */
+    cursor: pointer;
+  }
+  .info {
+    padding: 6px 0 0 0;
+    font-family: manrope;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 10px 5px 0 25px;
+  }
+  .info .names {
+    padding: -12px 0px 0px 0;
+    margin-left: 200px;
+    font-family: manrope;
+    font-size: 14px;
+  }
+  .info .names1 {
+    padding: 5px 0px 5px 0;
+    font-family: manrope;
+    margin-left: 50px;
+  }
+  .thanks {
+    margin-left: 80px;
+    font-family: manrope;
+    font-size: 18px;
+  }
+  .contact {
+    font-size: 18px;
+    font-family: manrope;
+    color: #ffffff;
+    margin-top: 25px;
+  }
+  .home {
+    border: 1px solid #ffffff;
+    margin: 15.5vh 4.5vh 4.5vh 4.5vh;
+    width: 1000px;
+    height: 480px;
+    border-radius: 12px;
+    border-color: white;
+    background-image: url(./img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .gno {
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 20px 0 20px 40px;
+  }
+  .gno input {
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    margin-left: 50px;
+    width: 296px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .gtype {
+    display: flex;
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    width: 95%;
+    margin: 80px 0 80px 40px;
+  }
+  .IEno {
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 20px 0 0 40px;
+  }
+  .IEno input {
+    margin-left: 80px;
+    width: 315px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .IDno {
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 40px 0 0 40px;
+  }
+  .IDno input {
+    margin-left: 80px;
+    width: 315px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .xrtype {
+    display: flex;
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    margin: 40px 0 0 40px;
+  }
+  .xreftype {
+    width: 50%;
+    margin: auto 0;
+  }
+  .radio {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: -25px;
+    font-size: 12px;
+    border: 3px solid #ca9800;
+    border-radius: 5px;
+    background: transparent;
+    border-radius: 5px;
+    height: 120px;
+  }
+  .radio1 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: -60px;
+    font-size: 12px;
+    border: 3px solid #ca9800;
+    border-radius: 5px;
+    background: transparent;
+    border-radius: 5px;
+    height: 100px;
+  }
+  .list1 {
+    padding: 18px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .list1 .label {
+    margin: 10px 0 0 5px;
+  }
+  .list2 {
+    padding: 18px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .list2 .label {
+    margin: 0 0 0 5px;
+  }
+  .bt1 {
+    position: absolute;
+    /* padding: 28% 0 0 20%; */
+    bottom: 172px;
+    left: 700px;
+  }
+  .bt1 button {
+    margin: 0 20px;
+    width: 125px;
+    height: 45px;
+    font-family: manrope;
+    color: #ffff;
+    font-size: 16px;
+    border: 3px solid #ca9800;
+    border-radius: 5px;
+    background: transparent;
+    transition: 500ms;
+  }
+  .bt1 button:hover {
+    /* background-color: #FFFF; */
+    /* color: black; */
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px 0 #888888;
+    /* transition: 800ms; */
+    cursor: pointer;
+  }
+  .bt1 button:active {
+    background-color: #ffff;
+    color: black;
+    scale: (1.03);
+    transform: scale(0.95);
+    /* transition: 800ms; */
+    cursor: pointer;
+  }
+  .tol1 {
+    display: flex;
+    font-family: manrope;
+    font: size 16px;
+    color: white;
+    margin: 20px 0 16px 30px;
+  }
+  .tol1 input {
+    display: inline-block;
+    margin-left: 82px;
+    width: 133px;
+    height: 30px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol1 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol1 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .tol2 {
+    display: flex;
+    font-family: manrope;
+    font-size: 16px;
+    color: white;
+    margin: 10px 0 16px 30px;
+  }
+  .tol2 input {
+    display: inline-block;
+    margin-left: 43px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 133px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol2 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol2 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .tol3 {
+    display: flex;
+    font-family: manrope;
+    font-size: 16px;
+    color: white;
+    margin: 10px 0 16px 30px;
+  }
+  .tol3 input {
+    display: inline-block;
+    margin-left: 49px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 133px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol3 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol3 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .tol4 {
+    display: flex;
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 16px 30px;
+  }
+  .tol4 input {
+    width: 170px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    display: inline-block;
+    margin-left: 104px;
+    width: 133px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol4 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol4 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .tol5 {
+    display: flex;
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 16px 30px;
+  }
+  .tol5 input {
+    width: 170px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    display: inline-block;
+    margin-left: 66px;
+    width: 133px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol5 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol5 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .tol6 {
+    display: flex;
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 16px 30px;
+  }
+  .tol6 input {
+    width: 170px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    display: inline-block;
+    margin-left: 31px;
+    width: 133px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol6 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol6 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .met label {
+    width: 135px;
+    display: inline-block;
+  }
+  .met {
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 16px 30px;
+  }
+  .met input {
+    margin-left: 4px;
+    width: 310px;
+    height: 30px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .upright {
+    margin: -305px 0 0 570px;
+    font-size: 26px;
+    font-family: manrope;
+    writing-mode: vertical-rl;
+    /* text-orientation: upright; */
+    color: #999999;
+  }
+  .toggle {
+    display: inline-block;
+  }
+  .toggle input {
+    width: 30px;
+    height: 30px;
+    margin: 3px 0 auto 30px;
+  }
+  input[type="checkbox"] {
+    position: relative;
+    top: 2.2px;
+    width: 45px;
+    height: 22px;
+    -webkit-appearance: none;
+    background: #b9bab4;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0.2);
+    transition: 0.5s;
+  }
+  input:checked[type="checkbox"] {
+    background: #e5b82f;
+  }
+  input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    top: -1px;
+    left: 0;
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0.2);
+    transition: 0.5s;
+  }
+  input:checked[type="checkbox"]:before {
+    left: 25px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  body {
+    background-image: url(./img/bg.jpg);
+    background-size: 140%;
+    background-repeat: no-repeat;
+  }
+  .note h3{
+    display:none;
+    margin: -332px 0 0 190px;
+    font-size: 12px;
+    font-family: manrope;
+    color: white;
+  }
+  .gno input::placeholder {
+    padding-left: 10px;
+  }
+  .IEno input::placeholder {
+    padding-left: 10px;
+  }
+  .IDno input::placeholder {
+    padding-left: 10px;
+  }
+  .tol1 input::placeholder {
+    padding-left: 10px;
+  }
+  .tol2 input::placeholder {
+    padding-left: 10px;
+  }
+  .tol3 input::placeholder {
+    padding-left: 10px;
+  }
+  .met input::placeholder {
+    padding-left: 10px;
+  }
+  .modal {
+    font-family: manrope;
+    background-image: url(./img/modal.png);
+    border: 50px;
+    border: 2px solid whitesmoke;
+    color: white;
+    font-size: 18px;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  .modal button {
+    width: 60px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 90px;
+    border-radius: 8px;
+    border: 2px solid #ca9800;
+    background: none;
+    font-size: 18px;
+  }
+  .modal a {
+    font-family: manrope;
+    color: white;
+  }
+  .modal button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 5px 0 #888888;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  .modal button:active {
+    background-color: white;
+    color: black;
+    scale: (1.03);
+    transform: scale(0.95);
+    cursor: pointer;
+    transition: 500ms;
+  }
+  .modal p {
+    margin-top: 8px 0;
+  }
+  .modalopen {
+    display: none;
+  }
+  .icon {
+    top: 85px;
+    left: 150px;
+    scale: 100%;
+  }
+  .container {
+    display: flex;
+    flex: 1;
+    margin: 5vh 10vw;
+    background-image: url(./img/background.png);
+    background-size: cover;
+    border-radius: 2vh;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
+  .but {
+    padding: 13.2vh 0 0 2vw;
+  }
+  .bt {
+    margin: 5.6vh 0 1.2vw 0;
+    /* height: 49px;
+        width: 200px; */
+    scale: 95%;
+    font-family: manrope;
+    font-size: 1.25rem;
+    color: #676767;
+    background-image: url(./img/m_button.jpg);
+    background-size: cover;
+    border: none;
+    transition: 500ms;
+  }
+  .bt:hover {
+    color: black;
+    box-shadow: 0px 5px 10px 0 rgb(214, 223, 221);
+    transform: scale(1.03);
+    /* transition: 500ms; */
+    cursor: pointer;
+  }
+  .bt:active {
+    color: black;
+    box-shadow: 0px 5px 10px 0 rgb(214, 223, 221);
+    transform: scale(0.9);
+    /* transition: 500ms; */
+    cursor: pointer;
+  }
+  .info {
+    padding: 6px 0 0 0;
+    font-family: manrope;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 10px 5px 0 25px;
+  }
+  .info .names {
+    padding: -12px 0px 0px 0;
+    margin-left: 200px;
+    font-family: manrope;
+    font-size: 14px;
+  }
+  .info .names1 {
+    padding: 5px 0px 5px 0;
+    font-family: manrope;
+    margin-left: 50px;
+  }
+  .thanks {
+    margin-left: 80px;
+    font-family: manrope;
+    font-size: 18px;
+  }
+  .contact {
+    font-size: 18px;
+    font-family: manrope;
+    color: #ffffff;
+    margin-top: 25px;
+  }
+  .home {
+    border: 1px solid #ffffff;
+    margin: 17.5vh 4.5vh 4.5vh 4.5vh;
+    width: 1000px;
+    height: 550px;
+    border-radius: 12px;
+    border-color: white;
+    background-image: url(./img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .gno {
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 50px 0 20px 40px;
+  }
+  .gno input {
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    margin-left: 98px;
+    width: 337px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .gtype {
+    display: flex;
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    width: 95%;
+    margin: 80px 0 80px 40px;
+  }
+  .IEno {
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 50px 0 0 40px;
+  }
+  .IEno input {
+    margin-left: 133px;
+    width: 354px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .IDno {
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 50px 0 0 40px;
+  }
+  .IDno input {
+    margin-left: 133px;
+    width: 354px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .xrtype {
+    display: flex;
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    margin: 50px 0 0 40px;
+  }
+  .xreftype {
+    width: 50%;
+    margin: auto 0;
+  }
+  .radio {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: -25px;
+    font-size: 12px;
+    border: 3px solid #ca9800;
+    border-radius: 5px;
+    background: transparent;
+    border-radius: 5px;
+    height: 120px;
+  }
+  .radio1 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: -60px;
+    font-size: 12px;
+    border: 3px solid #ca9800;
+    border-radius: 5px;
+    background: transparent;
+    border-radius: 5px;
+    height: 100px;
+  }
+  .list1 {
+    padding: 18px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .list1 .label {
+    margin: 10px 0 0 5px;
+  }
+  .list2 {
+    padding: 18px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .list2 .label {
+    margin: 0 0 0 5px;
+  }
+  .bt1 {
+    position: absolute;
+    /* padding: 28% 0 0 20%; */
+    bottom: 210px;
+    left: 600px;
+  }
+  .bt1 button {
+    margin: 0 20px;
+    width: 125px;
+    height: 45px;
+    font-family: manrope;
+    color: #ffff;
+    font-size: 16px;
+    border: 3px solid #ca9800;
+    border-radius: 5px;
+    background: transparent;
+    transition: 500ms;
+  }
+  .bt1 button:hover {
+    /* background-color: #FFFF; */
+    /* color: black; */
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px 0 #888888;
+    /* transition: 800ms; */
+    cursor: pointer;
+  }
+  .bt1 button:active {
+    background-color: #ffff;
+    color: black;
+    scale: (1.03);
+    transform: scale(0.95);
+    /* transition: 800ms; */
+    cursor: pointer;
+  }
+  .tol1 {
+    display: flex;
+    font-family: manrope;
+    font: size 16px;
+    color: white;
+    margin: 20px 0 25px 30px;
+  }
+  .tol1 input {
+    display: inline-block;
+    margin-left: 95px;
+    width: 133px;
+    height: 30px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol1 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol1 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .tol2 {
+    display: flex;
+    font-family: manrope;
+    font-size: 16px;
+    color: white;
+    margin: 20px 0 25px 30px;
+  }
+  .tol2 input {
+    display: inline-block;
+    margin-left: 53px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 133px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol2 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol2 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .tol3 {
+    display: flex;
+    font-family: manrope;
+    font-size: 16px;
+    color: white;
+    margin: 20px 0 25px 30px;
+  }
+  .tol3 input {
+    display: inline-block;
+    margin-left: 60px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 133px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol3 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol3 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .tol4 {
+    display: flex;
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 16px 30px;
+  }
+  .tol4 input {
+    width: 170px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    display: inline-block;
+    margin-left: 117px;
+    width: 133px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol4 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol4 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .tol5 {
+    display: flex;
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 16px 30px;
+  }
+  .tol5 input {
+    width: 170px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    display: inline-block;
+    margin-left: 80px;
+    width: 133px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol5 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol5 img {
+    display: inline-block;
+    margin: auto 10px;
+    width: 12px;
+    height: 15px;
+  }
+  .tol6 {
+    display: flex;
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 16px 30px;
+  }
+  .tol6 input {
+    width: 170px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    display: inline-block;
+    margin-left: 44px;
+    width: 133px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .tol6 .input1 {
+    margin-left: 0px;
+    margin-right: 3px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    width: 143px;
+    height: 30px;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .met label {
+    width: 135px;
+    display: inline-block;
+  }
+  .met {
+    font-family: manrope;
+    font-size: 18px;
+    color: white;
+    margin: 20px 0 25px 30px;
+  }
+  .met input {
+    margin-left: 18px;
+    width: 306px;
+    height: 30px;
+    font-family: manrope;
+    font-size: 12px;
+    color: white;
+    border: 3px solid#ca9800;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .upright {
+    margin: -350px 0 0 600px;
+    font-size: 26px;
+    font-family: manrope;
+    writing-mode: vertical-rl;
+    /* text-orientation: upright; */
+    color: #999999;
+  }
+  .toggle {
+    display: inline-block;
+  }
+  .toggle input {
+    width: 30px;
+    height: 30px;
+    margin: 3px 0 auto 30px;
+  }
+  input[type="checkbox"] {
+    position: relative;
+    top: 2.2px;
+    width: 45px;
+    height: 22px;
+    -webkit-appearance: none;
+    background: #b9bab4;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0.2);
+    transition: 0.5s;
+  }
+  input:checked[type="checkbox"] {
+    background: #e5b82f;
+  }
+  input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    top: -1px;
+    left: 0;
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0.2);
+    transition: 0.5s;
+  }
+  input:checked[type="checkbox"]:before {
+    left: 25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    display: none;
+  }
+  body {
+    background-image: url(./img/bg.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+  }
+  .desktoponly {
+    font-family: manrope;
+    font-size: 40px;
+    display: block;
+    margin: 300px 233px;
+  }
+}
